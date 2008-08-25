@@ -4,7 +4,7 @@ require 'rubygems/specification'
 require 'date'
 
 GEM = "euler"
-GEM_VERSION = "0.0.2"
+GEM_VERSION = "1.0.0"
 AUTHOR = "Mike Skalnik"
 EMAIL = "mike.skalnik@gmail.com"
 SUMMARY = "A gem that provides a small library to help in the solving of Project Euler problems."
