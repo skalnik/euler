@@ -2,7 +2,7 @@ require "test/unit"
 
 require "euler"
 
-class TestIntegerMethods < Test::Unit::TestCase #:nodoc:
+class TestIntegerMethods < Test::Unit::TestCase
   def test_factorial
     assert_equal(0, 0.factorial, "0! == 0")
     assert_equal(1, 1.factorial, "1! == 1")
