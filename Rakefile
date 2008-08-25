@@ -4,7 +4,7 @@ require 'rubygems/specification'
 require 'date'
 
 GEM = "euler"
-GEM_VERSION = "0.0.1"
+GEM_VERSION = "0.0.2"
 AUTHOR = "Mike Skalnik"
 EMAIL = "mike.skalnik@gmail.com"
 SUMMARY = "A gem that provides a small library to help in the solving of Project Euler problems."
@@ -14,19 +14,18 @@ spec = Gem::Specification.new do |s|
   s.version = GEM_VERSION
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
-  s.extra_rdoc_files = ["README", "LICENSE", 'TODO']
+  s.extra_rdoc_files = ["README.mkdn", "LICENSE", 'TODO']
   s.summary = SUMMARY
   s.description = s.summary
   s.author = AUTHOR
   s.email = EMAIL
-  s.homepage = HOMEPAGE
   
   # Uncomment this to add a dependency
   # s.add_dependency "foo"
   
   s.require_path = 'lib'
   s.autorequire = GEM
-  s.files = %w(LICENSE README Rakefile TODO) + Dir.glob("{lib,specs}/**/*")
+  s.files = %w(LICENSE README.mkdn Rakefile TODO) + Dir.glob("{lib,specs}/**/*")
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|

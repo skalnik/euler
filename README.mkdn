@@ -1,0 +1,5 @@
+Read me
+========
+
+## What is libeuler?
+libeuler is a simple library you can include in your code to take away some of the boring repetitive parts of solving Project Euler problems.
