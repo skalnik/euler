@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.date = %q{2008-08-25}
   s.description = %q{A gem that provides a small library to help in the solving of Project Euler problems.}
   s.email = %q{mike.skalnik@gmail.com}
-  s.extra_rdoc_files = ["README.mkdn", "LICENSE", "TODO"]
-  s.files = ["LICENSE", "README.mkdn", "TODO", "lib/euler.rb"]
+  s.extra_rdoc_files = ["README.mkdn", "LICENSE"]
+  s.files = ["LICENSE", "README.mkdn", "lib/euler.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://theoompa.com}
   s.require_paths = ["lib"]
