@@ -2,7 +2,7 @@ require "test/unit"
 
 require "euler"
 
-class TestModule < Test::Unit::TestCase
+class TestModule < Test::Unit::TestCase #:nodoc:
   def test_sieve
     Euler.generate_sieve(50)
     assert_equal(50, Euler::sieve.length, "Euler.sieve(50) should make Euler::sieve an array of length 50.")
