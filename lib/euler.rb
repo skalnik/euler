@@ -8,6 +8,7 @@ Copyright:: 2008, Mike Skalnik; All Rights Reserved
 License:: See LICENSE file
 =end
 module Euler
+  VERSION = "1.0.3"
   extend self
   attr_reader :primes, :sieve, :fibonaccis
   # Several methods for the Integer class.
