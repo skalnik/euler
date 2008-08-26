@@ -9,8 +9,13 @@ Gem::Specification.new do |s|
   s.description = %q{A gem that provides a small library to help in the solving of Project Euler problems.}
   s.has_rdoc = true
   s.authors = ["Mike Skalnik"]
-  s.files = Dir.glob('*.txt') << 'lib/euler.rb'
-  s.extra_rdoc_files = Dir.glob('*.txt')
+  s.files = ['README.txt',
+             'History.txt',
+             'Manifest.txt',
+             'lib/euler.rb']
+  s.extra_rdoc_files = ['README.txt', 'History.txt']
   s.require_paths = ["lib"]
-  s.test_files = Dir.glob('test/tc_*.rb') << 'test/test_euler.rb'
+  s.test_files = ['test/tc_integer_methods.rb',
+                  'test/tc_module.rb',
+                  'test/test_euler.rb']
 end
