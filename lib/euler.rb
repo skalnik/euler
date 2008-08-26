@@ -1,12 +1,4 @@
-=begin rdoc
-libeuler is a simple library you can simply +require+ in your code.
-It's goal is to help reduce the repetativeness of some Project
-Euler problems.
-
-Author:: Mike Skalnik(mailto:mike.skalnik@gmail.com)
-Copyright:: 2008, Mike Skalnik; All Rights Reserved
-License:: See LICENSE file
-=end
+# The module that contains all the methods.
 module Euler
   VERSION = "1.0.3"
   extend self
@@ -26,10 +18,10 @@ module Euler
     def prime_factors
       return [self] if self.prime?
       current, to_factor, factors, max = 2, self, [], 0
-      # current is the value currently being tested
-      # to_factor is the value being factored (slowly moves to a prime value)
-      # factors is the array of prime factors
-      # max is the maximum value of any factor set after the next loop
+      # current is the value currently being tested to_factor is the value
+      # being factored (slowly moves to a prime value) factors is the array of
+      # prime factors max is the maximum value of any factor set after the
+      # next loop
       while to_factor % current == 0
         factors << 2
         to_factor /= current
@@ -48,8 +40,7 @@ module Euler
       return factors
     end
   
-    # Returns +true+ or +false+ depending on the primality of
-    # +self+
+    # Returns a boolean which gives the primality of +self+
     #   2.prime? # => true
     #   4.prime? # => false
     def prime?
@@ -66,9 +57,8 @@ module Euler
       return true
     end
   
-    # Compares +self+ and +x+ and returns +true+
-    # if the values are permutations, and +false+
-    # otherwise.
+    # Compares +self+ and +x+ and returns +true+ if the values are 
+    # permutations, and +false+ otherwise.
     #   123.is_permutation?(312) # => true
     #   312.is_permutation?(281) # => false
     def is_permutation?(x)
@@ -89,8 +79,7 @@ module Euler
       return s_total == x_total
     end
   
-    # Checks to see if +self+ is a pandigital with the range
-    # of x
+    # Checks to see if +self+ is a pandigital with the range of x
     #   0192837465.is_pandigital?(0..9) # => true
     #   0192837465.is_pandigital?(1..9) # => false
     def is_pandigital?(x)
@@ -101,8 +90,7 @@ module Euler
       return true
     end
   
-    # Checks to see if +self+ is contained in the fibonacci
-    # sequence.
+    # Checks to see if +self+ is contained in the fibonacci sequence.
     #   1.is_fibonacci? # => true
     #   4.is_fibonacci? # => true
     def is_fibonacci?
@@ -124,9 +112,8 @@ module Euler
     end
   end
 
-  # A basic prime sieve. Sets Euler.sieve to an array of
-  # boolean values that indicate if that index if prime
-  # or not.
+  # A basic prime sieve. Sets Euler.sieve to an array of boolean values that
+  # indicate if that index if prime or not.
   #   Euler.generate_sieve(50)
   #   Euler::sieve[2] # => true
   #   Euler::sieve[4] # => false
@@ -141,8 +128,7 @@ module Euler
     }
   end
 
-  # A more advanced prime sieve. Generates an n amount of
-  # prime values.
+  # A more advanced prime sieve. Generates an n amount of prime values.
   #   Euler.get_primes(50)
   #   Euler::primes[0] # => 2
   #   Euler::primes[2] # => 5
@@ -177,8 +163,8 @@ module Euler
     a**2 + b**2 == c**2
   end
   
-  # Given two values of a pythagorean triplet, and nil for the missing
-  # value, it returns the missing value.
+  # Given two values of a pythagorean triplet, and nil for the missing value,
+  # it returns the missing value.
   #   Euler.find_missing_pyth_value(nil, 4, 5) # => 3
   def find_missing_pyth_value(a, b, c)
     return Math.sqrt(c**2 - b**2) if a.nil?

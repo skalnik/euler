@@ -4,14 +4,14 @@
 
 libeuler is a simple library you can include in your code to take away some of the boring repetitive parts of solving Project Euler problems.
 
-== FEATURES/PROBLEMS:
+== FEATURES:
 
 * Adds various methods to the Integer class, such as factorial, prime?, is_fibonacci?, etc.
 * Provides various module methods, such as generate_sieve, get_primes, etc.
 
 == SYNOPSIS:
 
-  require 'rubygems'
+	require 'rubygems'
 	require 'euler'
 	
 	5.factorial # => 120
