@@ -1,5 +1,7 @@
 === 1.0.3 / 2008-08-26
 * Now added Rakefile for easy development.
+* Restructured gemspec
+* Added unit tests to gemspec
 
 === 1.0.2 / 2008-08-25
 * Removed redundant files…
