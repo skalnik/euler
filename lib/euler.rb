@@ -95,7 +95,7 @@ module Euler
     #   4.is_fibonacci? # => true
     def is_fibonacci?
       a, b = Math.sqrt((5*(self**2))+4), Math.sqrt((5*(self**2))-4)
-      return true if a.to_i == a or b.to_i == b
+      return true if (a.to_i == a and b.to_i != b) or (a.to_i != a && b.to_i == b)
       return false
     end
     
