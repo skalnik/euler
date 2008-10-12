@@ -1,4 +1,8 @@
+=== 1.0.5 /
+ * Fixed another error in Integer#is_fibonacci?
+
 === 1.0.4 /
+ * Fixed an error in Integer#is_fibonacci?
 
 === 1.0.3 / 2008-08-26
 * Now added Rakefile for easy development.

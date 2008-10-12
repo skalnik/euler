@@ -1,6 +1,6 @@
 # The module that contains all the methods.
 module Euler
-  VERSION = "1.0.4"
+  VERSION = "1.0.5"
   extend self
   attr_reader :primes, :sieve, :fibonaccis
   # Several methods for the Integer class.
@@ -94,6 +94,7 @@ module Euler
     #   1.is_fibonacci? # => true
     #   4.is_fibonacci? # => true
     def is_fibonacci?
+      return true if self == 1
       a, b = Math.sqrt((5*(self**2))+4), Math.sqrt((5*(self**2))-4)
       return true if (a.to_i == a and b.to_i != b) or (a.to_i != a && b.to_i == b)
       return false
