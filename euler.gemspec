@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mike Skalnik"]
   s.cert_chain = ["/Users/Oompa/.gem/gem-public_cert.pem"]
-  s.date = %q{2008-08-26}
+  s.date = %q{2008-10-12}
   s.description = %q{A gem that provides a small library to help in removing the repetativeness of solving Project Euler problems.}
   s.email = ["mike.skalnik@gmail.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
