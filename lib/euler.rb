@@ -1,6 +1,6 @@
 # The module that contains all the methods.
 module Euler
-  VERSION = "1.0.5"
+  VERSION = "1.0.7"
   extend self
   attr_reader :primes, :sieve, :fibonaccis
   # Several methods for the Integer class.
