@@ -18,22 +18,22 @@ module Euler
     def prime_factors
       return [self] if self.prime?
       current, to_factor, factors, max = 2, self, [], 0
-      # current is the value currently being tested to_factor is the value
-      # being factored (slowly moves to a prime value) factors is the array of
+      # current is the value currently being tested. to_factor is the value
+      # being factored (slowly moves to a prime value). factors is the array of
       # prime factors max is the maximum value of any factor set after the
       # next loop
       while to_factor % current == 0
-        factors << 2
+        factors << current
         to_factor /= current
       end
       current += 1
       max = Math.sqrt(to_factor).to_i + 1
-      while to_factor <= max
+      while to_factor >= max
         if to_factor % current == 0
           factors << current
           to_factor /= current
         else
-          i += 2
+          current += 2
         end
       end
       factors << to_factor if to_factor > 1
@@ -112,6 +112,7 @@ module Euler
       return count
     end
   end
+
 
   # A basic prime sieve. Sets Euler.sieve to an array of boolean values that
   # indicate if that index if prime or not.
