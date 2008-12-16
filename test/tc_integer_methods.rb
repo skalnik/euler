@@ -12,6 +12,7 @@ class TestIntegerMethods < Test::Unit::TestCase
   def test_prime_factors
     assert_equal([2, 5], 10.prime_factors, "10 factors into 2 and 5.")
     assert_equal([2, 2, 5], 20.prime_factors, "20 factors into 2, 2, and 5.")
+    assert_equal([2, 2, 7, 23], 644.prime_factors, "644 factors into 2, 2, 7, and 23.")
   end
   
   def test_primality

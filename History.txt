@@ -1,3 +1,9 @@
+=== 1.0.7 /
+ * Fixed error in Integer#prime_factors
+
+=== 1.0.6 /
+ * Fixed an error in Integer#prime_factors
+
 === 1.0.5 /
  * Fixed another error in Integer#is_fibonacci?
 
