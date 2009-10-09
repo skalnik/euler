@@ -8,7 +8,7 @@ module Euler
     # Returns +self+!
     #   5.factorial # => 120
     def factorial
-      return 0 if self < 1
+      return 1 if self < 1
       (2..self).inject(1) { |value, n| value * n }
     end
   
