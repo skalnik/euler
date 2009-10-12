@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{euler}
-  s.version = "1.0.7"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mike Skalnik"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{euler}
-  s.rubygems_version = %q{1.2.0}
+  s.rubygems_version = %q{1.3.5}
   s.signing_key = %q{/Users/Oompa/.gem/gem-private_key.pem}
   s.summary = %q{A small library to help solve Projet Euler problems.}
   s.test_files = ["test/test_euler.rb"]
