@@ -1,17 +1,37 @@
 = euler
 
-Description goes here.
+== DESCRIPTION:
 
-== Note on Patches/Pull Requests
+libeuler is a simple library you can include in your code to take away some of the boring repetitive parts of solving Project Euler problems.
+
+== FEATURES:
+
+* Adds various methods to the Integer class, such as factorial, prime?, is_fibonacci?, etc.
+* Provides various module methods, such as generate_sieve, get_primes, etc.
+
+== SYNOPSIS:
+
+	require 'rubygems'
+	require 'euler'
+	
+	5.factorial # => 120
+
+== REQUIREMENTS:
+
+* none
+
+== INSTALL:
+
+* sudo gem install euler
+
+== COLLABORATION:
  
 * Fork the project.
 * Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Add tests for it. This is important so I don't break it in a future version unintentionally.
+* Commit, do not mess with rakefile, version, or history. (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+== COPYRIGHT
 
 Copyright (c) 2009 Mike Skalnik, Nick Kezhaya. See LICENSE for details.
