@@ -173,7 +173,15 @@ module Euler
     return Math.sqrt(c**2 - a**2) if b.nil?
     return Math.sqrt(a**2 + b**2) if c.nil?
   end
-  
+
+  # Solves a Sudoku puzzle passed in as a 2D array.
+  #   Euler.solve_sudoku(
+  #
+  #   ) # => 
+  def solve_sudoku(puzzle)
+    rudoku = Rudoku.new(puzzle)
+    rudoku.backtrack_solve
+  end
 end
 
 # Just adds Euler::IntegerMethods to the Integer class.
