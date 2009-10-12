@@ -4,7 +4,7 @@ require "euler"
 
 class TestIntegerMethods < Test::Unit::TestCase
   def test_factorial
-    assert_equal(0, 0.factorial, "0! == 0")
+    assert_equal(1, 0.factorial, "0! == 1")
     assert_equal(1, 1.factorial, "1! == 1")
     assert_equal(120, 5.factorial, "5! == 120")
   end
