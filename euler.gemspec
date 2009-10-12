@@ -5,10 +5,10 @@
 
 Gem::Specification.new do |s|
   s.name = %q{euler}
-  s.version = "1.0.8"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Mike Skalnik"]
+  s.authors = ["Mike Skalnik", "Nick Kezhaya"]
   s.date = %q{2009-10-11}
   s.description = %q{A gem that provides a small library to help in removing the repetativeness of solving Project Euler problems.}
   s.email = %q{mike.skalnik@gmail.com}
@@ -24,9 +24,12 @@ Gem::Specification.new do |s|
      "README.txt",
      "Rakefile",
      "VERSION",
+     "euler.gemspec",
      "lib/euler.rb",
+     "lib/rudoku.rb",
      "test/tc_integer_methods.rb",
      "test/tc_module.rb",
+     "test/tc_rudoku.rb",
      "test/test_euler.rb"
   ]
   s.homepage = %q{http://github.com/skalnik/euler}
@@ -37,6 +40,7 @@ Gem::Specification.new do |s|
   s.test_files = [
     "test/tc_integer_methods.rb",
      "test/tc_module.rb",
+     "test/tc_rudoku.rb",
      "test/test_euler.rb"
   ]
 

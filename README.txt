@@ -28,7 +28,7 @@ libeuler is a simple library you can include in your code to take away some of t
 
 (BSD License)
 
-Copyright (c) 2008, Mike "Oompa" Skalnik ("THE AUTHOR")
+Copyright (c) 2008, Mike "Oompa" Skalnik, Nick "zaR" Kezhaya ("THE AUTHORS")
 All rights reserved. mike.skalnik@gmail.com
 
 Redistribution and use in source and binary forms, with or without
