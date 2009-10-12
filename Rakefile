@@ -9,7 +9,7 @@ begin
     gem.description = %Q{A gem that provides a small library to help in removing the repetativeness of solving Project Euler problems.}
     gem.email = "mike.skalnik@gmail.com"
     gem.homepage = "http://github.com/skalnik/euler"
-    gem.authors = ["Mike Skalnik"]
+    gem.authors = ["Mike Skalnik", "Nick Kezhaya"]
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
