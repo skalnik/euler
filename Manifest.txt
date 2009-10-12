@@ -1,8 +1,0 @@
-History.txt
-Manifest.txt
-README.txt
-Rakefile
-lib/euler.rb
-test/test_euler.rb
-test/tc_integer_methods.rb
-test/tc_module.rb
