@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/skalnik/euler}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
+  s.rubyforge_project = %q{euler}
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{A small library to help solve Projet Euler problems.}
   s.test_files = [

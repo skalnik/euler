@@ -10,7 +10,13 @@ begin
     gem.email = "mike.skalnik@gmail.com"
     gem.homepage = "http://github.com/skalnik/euler"
     gem.authors = ["Mike Skalnik", "Nick Kezhaya"]
+    gem.rubyforge_project = 'euler'
   end
+  
+  Jeweler::RubyforgeTasks.new do |rubyforge|
+    rubyforge.doc_task = 'rdoc'
+  end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
