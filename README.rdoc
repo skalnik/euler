@@ -11,10 +11,10 @@ libeuler is a simple library you can include in your code to take away some of t
 
 == SYNOPSIS
 
-	require 'rubygems'
-	require 'euler'
-	
-	5.factorial # => 120
+  require 'rubygems'
+  require 'euler'
+  
+  5.factorial # => 120
 
 == REQUIREMENTS
 
