@@ -1,6 +1,6 @@
 require "test/unit"
 
-require "euler"
+require File.dirname(__FILE__) + "/../lib/euler"
 
 class TestModule < Test::Unit::TestCase
   def test_sieve

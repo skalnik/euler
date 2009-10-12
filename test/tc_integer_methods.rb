@@ -1,6 +1,6 @@
 require "test/unit"
 
-require "euler"
+require File.dirname(__FILE__) + "/../lib/euler"
 
 class TestIntegerMethods < Test::Unit::TestCase
   def test_factorial
